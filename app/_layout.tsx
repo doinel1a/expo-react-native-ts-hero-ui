@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 
 import { SplashScreen, Stack } from 'expo-router';
 
+import HeroUIProvider from '@/components/providers/hero-ui';
 import useLoadFonts from '@/hooks/use-load-fonts';
 
 // eslint-disable-next-line unicorn/prefer-top-level-await
@@ -11,6 +12,7 @@ SplashScreen.preventAutoHideAsync().catch((error: unknown) => {
   console.error('Error preventing auto hiding splash screen', error);
 });
 
+// eslint-disable-next-line sonarjs/function-return-type
 export default function RootLayout() {
   const { areFontsLoaded, fontsError } = useLoadFonts();
 
@@ -31,8 +33,10 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack>
-      <Stack.Screen name='(tabs)' options={{ headerShown: false }} />
-    </Stack>
+    <HeroUIProvider>
+      <Stack>
+        <Stack.Screen name='(tabs)' options={{ headerShown: false }} />
+      </Stack>
+    </HeroUIProvider>
   );
 }
