@@ -1,8 +1,12 @@
 /* eslint-disable unicorn/prefer-module */
 
 const { getDefaultConfig } = require('expo/metro-config');
-const { withNativewind } = require('nativewind/metro');
+const { withUniwindConfig } = require('uniwind/metro');
 
 const config = getDefaultConfig(__dirname);
 
-module.exports = withNativewind(config);
+module.exports = withUniwindConfig(config, {
+  cssEntryFile: './global.css',
+  dtsFile: './uniwind-types.d.ts',
+  polyfills: { rem: 14 }
+});

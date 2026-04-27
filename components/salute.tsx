@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Text } from './tw';
+import { Text } from 'react-native';
 
 type TSalute = Readonly<{
   text: string;
