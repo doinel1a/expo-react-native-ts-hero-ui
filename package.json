@@ -1,0 +1,72 @@
+{
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Doinel Atanasiu",
+    "email": "doinel1atanasiu@gmail.com",
+    "url": "https://business-link.d1a.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doinel1a/expo-react-native-ts"
+  },
+  "main": "expo-router/entry",
+  "scripts": {
+    "postinstall": "husky",
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit",
+    "lint": "expo lint",
+    "lint:fix": "expo lint --fix",
+    "format": "prettier --write **/**/*.{html,css,scss,js,jsx,cjs,mjs,ts,tsx,mdx} --cache"
+  },
+  "pnpm": {
+    "overrides": {
+      "lightningcss": "1.30.1"
+    }
+  },
+  "dependencies": {
+    "@expo/vector-icons": "15.1.1",
+    "expo": "55.0.17",
+    "expo-constants": "55.0.15",
+    "expo-dev-client": "55.0.28",
+    "expo-font": "55.0.6",
+    "expo-linking": "55.0.14",
+    "expo-router": "55.0.13",
+    "expo-status-bar": "55.0.5",
+    "expo-system-ui": "55.0.16",
+    "nativewind": "5.0.0-preview.3",
+    "react": "19.2.0",
+    "react-native": "0.83.6",
+    "react-native-css": "3.0.7",
+    "react-native-reanimated": "4.2.1",
+    "react-native-safe-area-context": "5.6.2",
+    "react-native-screens": "4.23.0",
+    "react-native-worklets": "0.7.4"
+  },
+  "devDependencies": {
+    "@babel/core": "7.29.0",
+    "@commitlint/cli": "20.5.2",
+    "@commitlint/config-conventional": "20.5.0",
+    "@eslint/eslintrc": "3.3.5",
+    "@ianvs/prettier-plugin-sort-imports": "4.7.1",
+    "@tailwindcss/postcss": "4.2.4",
+    "@types/react": "19.2.14",
+    "eslint": "10.2.1",
+    "eslint-config-expo": "55.0.0",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-prettier": "5.5.5",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-sonarjs": "4.0.3",
+    "eslint-plugin-unicorn": "64.0.0",
+    "husky": "9.1.7",
+    "lint-staged": "16.4.0",
+    "postcss": "8.5.12",
+    "prettier": "3.8.3",
+    "prettier-plugin-tailwindcss": "0.8.0",
+    "tailwindcss": "4.2.4",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.59.0"
+  }
+}

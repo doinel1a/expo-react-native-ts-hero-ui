@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "expo-react-native-ts",
+    "slug": "expo-react-native-ts",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "expo-react-native-ts",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.d1a.exporeactnativets"
+    },
+    "plugins": ["expo-dev-client", "expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

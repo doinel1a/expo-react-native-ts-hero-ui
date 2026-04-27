@@ -1,0 +1,48 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    // ==========================================================================
+    // PROJECTS
+    // ==========================================================================
+    "incremental": true,
+    "tsBuildInfoFile": ".expo/cache/.tsbuildinfo",
+
+    // ==========================================================================
+    // MODULES
+    // ==========================================================================
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "noUncheckedSideEffectImports": true,
+
+    // ==========================================================================
+    // INTEROP CONSTRAINTS
+    // ==========================================================================
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // ==========================================================================
+    // TYPE CHECKING
+    // ==========================================================================
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+
+    // ==========================================================================
+    // OUTPUT FORMATTING
+    // ==========================================================================
+    "noErrorTruncation": true
+  },
+  // ============================================================================
+  // FILE INCLUSION
+  // ============================================================================
+  "include": ["**/*.ts", "**/*.tsx", "expo-env.d.ts", ".expo/types/**/*.ts", "nativewind-env.d.ts"]
+}
