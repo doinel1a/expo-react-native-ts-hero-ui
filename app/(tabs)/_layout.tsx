@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { NativeTabs as Tabs } from 'expo-router/unstable-native-tabs';
 
 const tabs = [

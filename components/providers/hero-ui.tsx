@@ -1,5 +1,3 @@
-import React from 'react';
-
 import type { HeroUINativeConfig } from 'heroui-native';
 import type { PropsWithChildren } from 'react';
 
