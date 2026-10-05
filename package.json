@@ -13,9 +13,9 @@
   "main": "expo-router/entry",
   "engines": {
     "node": ">=24",
-    "pnpm": ">=11"
+    "pnpm": ">=12"
   },
-  "packageManager": "pnpm@11.21.0",
+  "packageManager": "pnpm@12.9.1",
   "scripts": {
     "prepare": "husky",
     "start": "expo start",
