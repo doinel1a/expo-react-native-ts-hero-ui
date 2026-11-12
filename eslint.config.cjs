@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 
 const { FlatCompat } = require('@eslint/eslintrc');
+const { defineConfig } = require('eslint/config');
 const prettierConfig = require('eslint-config-prettier/flat');
 const prettierPlugin = require('eslint-plugin-prettier/recommended');
 const react = require('eslint-plugin-react');
@@ -13,7 +14,7 @@ const compat = new FlatCompat({
 });
 
 /** @type {import("eslint").Linter.Config} */
-module.exports = tseslint.config(
+module.exports = defineConfig(
   {
     ignores: ['.expo']
   },
