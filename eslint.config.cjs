@@ -1,4 +1,6 @@
 /* eslint-disable no-undef */
+/* eslint-disable unicorn/single-line-block-comment-style */
+/* eslint-disable unicorn/no-asterisk-prefix-in-documentation-comments */
 
 const { FlatCompat } = require('@eslint/eslintrc');
 const { defineConfig } = require('eslint/config');

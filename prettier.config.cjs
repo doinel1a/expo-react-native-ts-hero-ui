@@ -1,3 +1,5 @@
+/* eslint-disable unicorn/single-line-block-comment-style */
+
 /** @type {import("prettier").Config} */
 module.exports = {
   printWidth: 100,
