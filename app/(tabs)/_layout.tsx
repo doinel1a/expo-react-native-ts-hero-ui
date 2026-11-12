@@ -1,4 +1,4 @@
-import { NativeTabs as Tabs } from 'expo-router/unstable-native-tabs';
+import { NativeTabs as Tabs } from 'expo-router/native-tabs';
 
 const tabs = [
   {
