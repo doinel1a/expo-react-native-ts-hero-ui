@@ -7,11 +7,6 @@
     "icon": "./assets/images/icon.png",
     "scheme": "expo-react-native-ts",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
@@ -23,7 +18,18 @@
       },
       "package": "com.d1a.exporeactnativets"
     },
-    "plugins": ["expo-dev-client", "expo-router"],
+    "plugins": [
+      "expo-dev-client",
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
     "experiments": {
       "typedRoutes": true
     }
